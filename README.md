@@ -2,7 +2,7 @@
 
 A terminal user interface for browsing and downloading files from AWS S3, with full support for AWS IAM Identity Center (SSO).
 
-![S3 TUI Demo](https://via.placeholder.com/800x400?text=S3+TUI+Screenshot)
+![S3 TUI Demo](demo.gif)
 
 ## Features
 
