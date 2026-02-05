@@ -1,9 +1,9 @@
 package tui
 
 import (
-	"github.com/natevick/s3-tui/internal/aws"
-	"github.com/natevick/s3-tui/internal/bookmarks"
-	"github.com/natevick/s3-tui/internal/download"
+	"github.com/natevick/stui/internal/aws"
+	"github.com/natevick/stui/internal/bookmarks"
+	"github.com/natevick/stui/internal/download"
 )
 
 // ViewType represents the current active view

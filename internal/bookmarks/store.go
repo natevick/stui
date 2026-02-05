@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/natevick/s3-tui/internal/security"
+	"github.com/natevick/stui/internal/security"
 )
 
 // Bookmark represents a saved S3 location
@@ -74,7 +74,7 @@ func getConfigDir() (string, error) {
 		return "", fmt.Errorf("failed to get home directory: %w", err)
 	}
 
-	configDir := filepath.Join(homeDir, ".config", "s3-tui")
+	configDir := filepath.Join(homeDir, ".config", "stui")
 	if err := os.MkdirAll(configDir, 0700); err != nil {
 		return "", fmt.Errorf("failed to create config directory: %w", err)
 	}

@@ -5,14 +5,14 @@ import (
 	"time"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/natevick/s3-tui/internal/aws"
-	"github.com/natevick/s3-tui/internal/bookmarks"
-	"github.com/natevick/s3-tui/internal/download"
-	"github.com/natevick/s3-tui/internal/views/bookmarksview"
-	"github.com/natevick/s3-tui/internal/views/browser"
-	"github.com/natevick/s3-tui/internal/views/buckets"
-	downloadview "github.com/natevick/s3-tui/internal/views/download"
-	"github.com/natevick/s3-tui/internal/views/profiles"
+	"github.com/natevick/stui/internal/aws"
+	"github.com/natevick/stui/internal/bookmarks"
+	"github.com/natevick/stui/internal/download"
+	"github.com/natevick/stui/internal/views/bookmarksview"
+	"github.com/natevick/stui/internal/views/browser"
+	"github.com/natevick/stui/internal/views/buckets"
+	downloadview "github.com/natevick/stui/internal/views/download"
+	"github.com/natevick/stui/internal/views/profiles"
 )
 
 // Model is the root model for the TUI application

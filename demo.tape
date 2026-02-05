@@ -1,4 +1,4 @@
-# VHS Demo for S3 TUI
+# VHS Demo for stui
 Output demo.gif
 
 Set FontSize 13
@@ -8,7 +8,7 @@ Set Theme "Catppuccin Mocha"
 Set Framerate 12
 Set LoopOffset 0%
 
-Type "./s3tui --demo"
+Type "./stui --demo"
 Enter
 Sleep 1s
 

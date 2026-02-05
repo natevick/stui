@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/natevick/s3-tui/internal/aws"
+	"github.com/natevick/stui/internal/aws"
 )
 
 // SyncResult contains the result of a sync operation

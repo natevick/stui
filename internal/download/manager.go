@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/natevick/s3-tui/internal/aws"
-	"github.com/natevick/s3-tui/internal/security"
+	"github.com/natevick/stui/internal/aws"
+	"github.com/natevick/stui/internal/security"
 )
 
 // Status represents the state of a download

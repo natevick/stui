@@ -1,8 +1,8 @@
-# S3 TUI
+# stui
 
 A terminal user interface for browsing and downloading files from AWS S3, with full support for AWS IAM Identity Center (SSO).
 
-![S3 TUI Demo](demo.gif)
+![stui Demo](demo.gif)
 
 ## Features
 
@@ -26,28 +26,28 @@ A terminal user interface for browsing and downloading files from AWS S3, with f
 ### Quick Install (macOS/Linux)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/natevick/s3-tui/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/natevick/stui/main/install.sh | bash
 ```
 
 ### From Binary
 
-Download the latest release for your platform from the [Releases](https://github.com/natevick/s3-tui/releases) page.
+Download the latest release for your platform from the [Releases](https://github.com/natevick/stui/releases) page.
 
 ```bash
 # macOS/Linux - make executable and move to PATH
-chmod +x s3tui-*
-sudo mv s3tui-* /usr/local/bin/s3tui
+chmod +x stui-*
+sudo mv stui-* /usr/local/bin/stui
 
 # Or without sudo, add to your local bin
 mkdir -p ~/.local/bin
-mv s3tui-* ~/.local/bin/s3tui
+mv stui-* ~/.local/bin/stui
 # Add to PATH in ~/.zshrc or ~/.bashrc: export PATH="$HOME/.local/bin:$PATH"
 ```
 
 ### From Source (requires Go)
 
 ```bash
-go install github.com/natevick/s3-tui/cmd/s3tui@latest
+go install github.com/natevick/stui/cmd/stui@latest
 ```
 
 This installs to `$GOPATH/bin` (usually `~/go/bin`), which should be in your PATH.
@@ -55,9 +55,9 @@ This installs to `$GOPATH/bin` (usually `~/go/bin`), which should be in your PAT
 Or clone and build:
 
 ```bash
-git clone https://github.com/natevick/s3-tui.git
-cd s3-tui
-go build -o s3tui ./cmd/s3tui
+git clone https://github.com/natevick/stui.git
+cd stui
+go build -o stui ./cmd/stui
 ```
 
 ## AWS SSO Login
@@ -68,22 +68,22 @@ Before using with SSO profiles, authenticate with the AWS CLI:
 aws sso login --profile my-profile
 ```
 
-This opens a browser window to complete authentication. Once logged in, you can use S3 TUI.
+This opens a browser window to complete authentication. Once logged in, you can use stui.
 
 ## Usage
 
 ```bash
 # Launch with profile picker
-s3tui
+stui
 
 # Launch with specific profile
-s3tui --profile my-profile
+stui --profile my-profile
 
 # Launch directly into a bucket
-s3tui --profile my-profile --bucket my-bucket
+stui --profile my-profile --bucket my-bucket
 
 # Demo mode (no AWS credentials needed)
-s3tui --demo
+stui --demo
 ```
 
 ## Keyboard Shortcuts
@@ -123,7 +123,7 @@ s3tui --demo
 
 ## Configuration
 
-S3 TUI uses your standard AWS configuration (`~/.aws/config` and `~/.aws/credentials`).
+stui uses your standard AWS configuration (`~/.aws/config` and `~/.aws/credentials`).
 
 ### Example SSO Profile
 

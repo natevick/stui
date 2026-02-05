@@ -8,7 +8,7 @@ import (
 	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/natevick/s3-tui/internal/aws"
+	"github.com/natevick/stui/internal/aws"
 )
 
 // Item represents a bucket in the list

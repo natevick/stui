@@ -1,4 +1,4 @@
-module github.com/natevick/s3-tui
+module github.com/natevick/stui
 
 go 1.25.6
 

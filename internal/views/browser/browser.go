@@ -10,7 +10,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/dustin/go-humanize"
-	"github.com/natevick/s3-tui/internal/aws"
+	"github.com/natevick/stui/internal/aws"
 )
 
 // Item represents an S3 object in the list

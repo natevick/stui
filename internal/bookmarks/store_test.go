@@ -8,7 +8,7 @@ import (
 
 func TestBookmarkStore(t *testing.T) {
 	// Create temp directory for test
-	tmpDir, err := os.MkdirTemp("", "s3tui-test")
+	tmpDir, err := os.MkdirTemp("", "stui-test")
 	if err != nil {
 		t.Fatalf("failed to create temp dir: %v", err)
 	}

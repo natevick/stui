@@ -8,7 +8,7 @@ import (
 	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/natevick/s3-tui/internal/bookmarks"
+	"github.com/natevick/stui/internal/bookmarks"
 )
 
 // Item represents a bookmark in the list

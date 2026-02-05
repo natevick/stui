@@ -8,7 +8,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/dustin/go-humanize"
-	"github.com/natevick/s3-tui/internal/download"
+	"github.com/natevick/stui/internal/download"
 )
 
 // Model is the download view model

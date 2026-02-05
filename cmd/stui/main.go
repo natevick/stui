@@ -6,8 +6,8 @@ import (
 	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/natevick/s3-tui/internal/security"
-	"github.com/natevick/s3-tui/internal/tui"
+	"github.com/natevick/stui/internal/security"
+	"github.com/natevick/stui/internal/tui"
 )
 
 var (
@@ -24,7 +24,7 @@ func main() {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Printf("s3-tui version %s\n", version)
+		fmt.Printf("stui version %s\n", version)
 		os.Exit(0)
 	}
 

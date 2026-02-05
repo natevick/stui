@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
-# S3 TUI Installer
-# Usage: curl -fsSL https://raw.githubusercontent.com/natevick/s3-tui/main/install.sh | bash
+# stui Installer
+# Usage: curl -fsSL https://raw.githubusercontent.com/natevick/stui/main/install.sh | bash
 
-REPO="natevick/s3-tui"
-BINARY_NAME="s3tui"
+REPO="natevick/stui"
+BINARY_NAME="stui"
 INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 
 # Colors for output
@@ -56,7 +56,7 @@ get_latest_version() {
 main() {
     echo ""
     echo "  ╔═══════════════════════════════════╗"
-    echo "  ║       S3 TUI Installer            ║"
+    echo "  ║         stui Installer            ║"
     echo "  ╚═══════════════════════════════════╝"
     echo ""
 
