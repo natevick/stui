@@ -1,5 +1,9 @@
 # stui
 
+[![Website](https://img.shields.io/badge/website-stui.app-blue)](https://stui.app)
+[![GitHub release](https://img.shields.io/github/v/release/natevick/stui)](https://github.com/natevick/stui/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A terminal user interface for browsing and downloading files from AWS S3, with full support for AWS IAM Identity Center (SSO).
 
 ![stui Demo](demo.gif)
@@ -26,7 +30,7 @@ A terminal user interface for browsing and downloading files from AWS S3, with f
 ### Quick Install (macOS/Linux)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/natevick/stui/main/install.sh | bash
+curl -fsSL https://stui.app/install.sh | bash
 ```
 
 ### From Binary
