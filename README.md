@@ -15,6 +15,12 @@ A terminal user interface for browsing and downloading files from AWS S3, with f
 - **Bookmarks** - Save frequently accessed locations
 - **Demo mode** - Try the UI without AWS credentials
 
+## Prerequisites
+
+- **AWS CLI v2** - Required for SSO authentication
+  - [Installation instructions](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+  - Verify installation: `aws --version`
+
 ## Installation
 
 ### From Binary
@@ -35,6 +41,16 @@ cd s3-tui
 go build -o s3tui ./cmd/s3tui
 ```
 
+## AWS SSO Login
+
+Before using with SSO profiles, authenticate with the AWS CLI:
+
+```bash
+aws sso login --profile my-profile
+```
+
+This opens a browser window to complete authentication. Once logged in, you can use S3 TUI.
+
 ## Usage
 
 ```bash
@@ -49,14 +65,6 @@ s3tui --profile my-profile --bucket my-bucket
 
 # Demo mode (no AWS credentials needed)
 s3tui --demo
-```
-
-### AWS SSO Login
-
-Before using with SSO profiles, authenticate:
-
-```bash
-aws sso login --profile my-profile
 ```
 
 ## Keyboard Shortcuts
